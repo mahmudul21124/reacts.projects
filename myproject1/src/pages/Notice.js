@@ -47,48 +47,74 @@ export default function Notice() {
         </div>
       </div>
       {/*<!--Breadcrumb end-->*/}
-      
+
       {/*<!--edu team wrapper Start-->*/}
-      <div className="ed_pagetitle">
+      <div className="ed_graysection ed_toppadder80 ed_bottompadder80">
         <div className="container">
-          <div className="table-wrap mb-20">
-            {/* <div className="table-responsive"> */}
-              <table className="table table-bordered mb-0">
-                <thead className="bg-info text-dark">
-                  <tr>
-                    <th>Notice</th>
-                    <th>Publish Date</th>
+          <div className="col-lg-12 col-md-12 col-sm-12 col-12">
+            <div className="table-responsive">
+            <table className="table table-bordered mb-0">
+              <thead className="bg-info text-dark">
+                <tr>
+                  <th>Notice</th>
+                  <th>Publish Date</th>
+                </tr>
+              </thead>
+              <tbody>
+                {users.map((user, key) => (
+                  <tr key={key}>
+                    <td>{user.title}</td>
+                    <td>{user.creationDate}</td>
                   </tr>
-                </thead>
-                <tbody>
-                  {users.map((user, key) => (
-                    <tr key={key}>
-                      <td>{user.title}</td>
-                      <td>{user.creationDate}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          {/* </div> */}
+                ))}
+              </tbody>
+            </table>
+          </div>
+          </div>
         </div>
       </div>
       {/*<!--edu team wrapper End-->*/}
 
-      {/*<!--edu letter wrapper Start-->*/}
-      <div className="edu_letter_main_wrapper float_left">
+      {/*<!--Newsletter Section six start-->*/}
+      <div className="ed_newsletter_section">
+        <div className="ed_img_overlay"></div>
         <div className="container">
-          <div className="edu_left_envo">
-            <img src="images/innn.png" alt="img" />
-            <h3>Sign up for Newsletter</h3>
-          </div>
-          <div className="edu_right_form">
-            <input type="text" placeholder="Enter your email" />
-            <button>Sign Up</button>
+          <div className="row">
+            <div className="col-lg-12 col-md-12 col-sm-12">
+              <div className="row">
+                <div className="col-lg-7 col-md-7 col-sm-12 col-12">
+                  <div className="ed_newsletter_section_heading">
+                    <h4>
+                      Let us inform you about everything important directly.
+                    </h4>
+                  </div>
+                </div>
+                <div className="col-lg-5 col-md-5 col-sm-12 col-12">
+                  <div className="row">
+                    <div className="ed_newsletter_section_form">
+                      <form className="form row m-0">
+                        <div className="col-lg-8 col-md-8 col-sm-12 col-12">
+                          <input
+                            className="form-control"
+                            type="text"
+                            placeholder="Newsletter Email"
+                          />
+                        </div>
+                        <div className="col-lg-4 col-md-4 col-sm-12 col-12">
+                          <button className="btn ed_btn ed_green">
+                            confirm
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      {/*<!--edu letter wrapper End-->*/}
+      {/*<!--Newsletter Section six end-->*/}
     </>
   );
 }

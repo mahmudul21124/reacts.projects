@@ -18,7 +18,7 @@ export default function Events() {
               <ul className="breadcrumb">
                 <li><Link to="/">home</Link></li>
                 <li><i className="fa fa-chevron-left"></i></li>
-                <li><Link to="events">HIS events</Link></li>
+                <li><Link to="/events">HIS events</Link></li>
               </ul>
             </div>
           </div>
@@ -50,117 +50,104 @@ export default function Events() {
                     <div className="col-lg-4 col-md-6 col-sm-6 col-12">
                       <div className="ed_event_wrapper_item">
                         <div className="ed_event_wrapper_item_img">
-                          <img src="https://dummyimage.com/263x263/000/fff" alt="item1" className="img-responsive" />
+                          <img src="assets/images/club2.jpg" alt="item1" className="img-responsive" />
                         </div>
                         <div className="ed_event_wrapper_item_description">
-                          <h4><Link to="event_single.html">Vocational Counselling</Link></h4>
+                          <h4><Link to="/events">Vocational Counselling</Link></h4>
                           <span>September 17 @ 7:00 am - 9:00 am</span>
                           <p>Vocational counselling is a career focused on helping people who need to find a job. Pretty obvious, right?</p>
-                          <Link to="event_single.html">get involved <i className="fa fa-long-arrow-right"></i></Link>
+                          <Link to="/events">get involved <i className="fa fa-long-arrow-right"></i></Link>
                         </div>
                       </div>
                     </div>
                     <div className="col-lg-4 col-md-6 col-sm-6 col-12">
                       <div className="ed_event_wrapper_item">
                         <div className="ed_event_wrapper_item_img">
-                          <img src="https://dummyimage.com/263x263/000/fff" alt="item1" className="img-responsive" />
+                          <img src="assets/images/e1.webp" alt="item1" className="img-responsive" />
                         </div>
                         <div className="ed_event_wrapper_item_description">
-                          <h4><Link to="event_single.html">Elementary School</Link></h4>
+                          <h4><Link to="/events">Elementary School</Link></h4>
                           <span>September 23 @ 7:30 am - 12:00 am</span>
                           <p>We offer these billing seminars to AMA member physicians along with their staff (attend the seminar)..</p>
-                          <Link to="event_single.html">get involved <i className="fa fa-long-arrow-right"></i></Link>
+                          <Link to="/events">get involved <i className="fa fa-long-arrow-right"></i></Link>
                         </div>
                       </div>
                     </div>
                     <div className="col-lg-4 col-md-6 col-sm-6 col-12">
                       <div className="ed_event_wrapper_item">
                         <div className="ed_event_wrapper_item_img">
-                          <img src="https://dummyimage.com/263x263/000/fff" alt="item1" className="img-responsive" />
+                          <img src="assets/images/e2.jpg" alt="item1" className="img-responsive" />
                         </div>
                         <div className="ed_event_wrapper_item_description">
-                          <h4><Link to="event_single.html">Student Guidance</Link></h4>
+                          <h4><Link to="/events">Student Guidance</Link></h4>
                           <span>September 25 @ 8:30 am - 10:00 am</span>
                           <p>Sometimes students need help with things unrelated to school. Where we come in and make sure you are happy .</p>
-                          <Link to="event_single.html">get involved <i className="fa fa-long-arrow-right"></i></Link>
+                          <Link to="/events">get involved <i className="fa fa-long-arrow-right"></i></Link>
                         </div>
                       </div>
                     </div>
                     <div className="col-lg-4 col-md-6 col-sm-6 col-12">
                       <div className="ed_event_wrapper_item">
                         <div className="ed_event_wrapper_item_img">
-                          <img src="https://dummyimage.com/263x263/000/fff" alt="item1" className="img-responsive" />
+                          <img src="assets/images/e3.jpg" alt="item1" className="img-responsive" />
                         </div>
                         <div className="ed_event_wrapper_item_description">
-                          <h4><Link to="event_single.html">Girls on Rails</Link></h4>
+                          <h4><Link to="/events">Girls on Rails</Link></h4>
                           <span>September 27 @ 10:30 pm - 12:00 pm</span>
                           <p>In a lot of various jobs, psycho tests are something you will have to deal with girls becomes.</p>
-                          <Link to="event_single.html">get involved <i className="fa fa-long-arrow-right"></i></Link>
+                          <Link to="/events">get involved <i className="fa fa-long-arrow-right"></i></Link>
                         </div>
                       </div>
                     </div>
                     <div className="col-lg-4 col-md-6 col-sm-6 col-12">
                       <div className="ed_event_wrapper_item">
                         <div className="ed_event_wrapper_item_img">
-                          <img src="https://dummyimage.com/263x263/000/fff" alt="item1" className="img-responsive" />
+                          <img src="assets/images/e4.jpg" alt="item1" className="img-responsive" />
                         </div>
                         <div className="ed_event_wrapper_item_description">
-                          <h4><Link to="event_single.html">Coding Seminar</Link></h4>
+                          <h4><Link to="/events">Coding Seminar</Link></h4>
                           <span>September 28 @ 1:30 pm - 5:00 pm</span>
                           <p>Coding Seminar is a career focused on helping people who need to find a job. Pretty obvious, as well right?</p>
-                          <Link to="event_single.html">get involved <i className="fa fa-long-arrow-right"></i></Link>
+                          <Link to="/events">get involved <i className="fa fa-long-arrow-right"></i></Link>
                         </div>
                       </div>
                     </div>
                     <div className="col-lg-4 col-md-6 col-sm-6 col-12">
                       <div className="ed_event_wrapper_item">
                         <div className="ed_event_wrapper_item_img">
-                          <img src="https://dummyimage.com/263x263/000/fff" alt="item1" className="img-responsive" />
+                          <img src="assets/images/e5.jpg" alt="item1" className="img-responsive" />
                         </div>
                         <div className="ed_event_wrapper_item_description">
-                          <h4><Link to="event_single.html">JavaScript Campus</Link></h4>
+                          <h4><Link to="/events">JavaScript Campus</Link></h4>
                           <span>September 29 @ 7:30 pm - 9:00 am</span>
                           <p>We can offer help for elementary schools as well. Make sure your kid becomes a superstar in JavaScript.</p>
-                          <Link to="event_single.html">get involved <i className="fa fa-long-arrow-right"></i></Link>
+                          <Link to="/events">get involved <i className="fa fa-long-arrow-right"></i></Link>
                         </div>
                       </div>
                     </div>
                     <div className="col-lg-4 col-md-6 col-sm-6 col-12">
                       <div className="ed_event_wrapper_item">
                         <div className="ed_event_wrapper_item_img">
-                          <img src="https://dummyimage.com/263x263/000/fff" alt="item1" className="img-responsive" />
+                          <img src="assets/images/e6.jpg" alt="item1" className="img-responsive" />
                         </div>
                         <div className="ed_event_wrapper_item_description">
-                          <h4><Link to="event_single.html">management prog.</Link></h4>
+                          <h4><Link to="/events">management prog.</Link></h4>
                           <span>September 30 @ 1:30 am - 5:00 pm</span>
                           <p>In the fast-paced business world, human capital mngmnt systems have been slowing people down with silted.</p>
-                          <Link to="event_single.html">get involved <i className="fa fa-long-arrow-right"></i></Link>
+                          <Link to="/events">get involved <i className="fa fa-long-arrow-right"></i></Link>
                         </div>
                       </div>
                     </div>
                     <div className="col-lg-4 col-md-6 col-sm-6 col-12">
                       <div className="ed_event_wrapper_item">
                         <div className="ed_event_wrapper_item_img">
-                          <img src="https://dummyimage.com/263x263/000/fff" alt="item1" className="img-responsive" />
+                          <img src="assets/images/e7.jpg" alt="item1" className="img-responsive" />
                         </div>
                         <div className="ed_event_wrapper_item_description">
-                          <h4><Link to="event_single.html">Model Specificity</Link></h4>
+                          <h4><Link to="/events">Model Specificity</Link></h4>
                           <span>October 1 @ 7:30 am - 9:00 am</span>
                           <p>Vague assessments like “great job,” or “needs more work” are the opposite of the kind of resolute specificity.</p>
-                          <Link to="event_single.html">get involved <i className="fa fa-long-arrow-right"></i></Link>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col-lg-4 col-md-6 col-sm-6 col-12">
-                      <div className="ed_event_wrapper_item">
-                        <div className="ed_event_wrapper_item_img">
-                          <img src="https://dummyimage.com/263x263/000/fff" alt="item1" className="img-responsive" />
-                        </div>
-                        <div className="ed_event_wrapper_item_description">
-                          <h4><Link to="event_single.html">mobile capabilities</Link></h4>
-                          <span>October 3 @ 12:30 am - 2:00 am</span>
-                          <p>Administrators can activate SuccessFactors Mobile for select individuals, groups access all mobile.</p>
-                          <Link to="event_single.html">get involved <i className="fa fa-long-arrow-right"></i></Link>
+                          <Link to="/events">get involved <i className="fa fa-long-arrow-right"></i></Link>
                         </div>
                       </div>
                     </div>

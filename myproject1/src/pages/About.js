@@ -18,7 +18,7 @@ export default function About() {
               <ul className="breadcrumb">
                 <li><Link to="/">home</Link></li>
                 <li><i className="fa fa-chevron-left"></i></li>
-                <li><Link to="about">About HIS</Link></li>
+                <li><Link to="/about">About HIS</Link></li>
               </ul>
             </div>
           </div>
@@ -78,10 +78,10 @@ export default function About() {
               <div className="col-lg-3 col-md-4 col-sm-6 col-12">
                 <div className="ed_team_member">
                   <div className="ed_team_member_img">
-                    <img src="https://dummyimage.com/263x263/000/fff" alt="item1" className="img-responsive" />
+                    <img src="assets/images/myIT4.jpg" alt="item1" className="img-responsive" />
                   </div>
                   <div className="ed_team_member_description">
-                    <h4><Link to="instructor_dashboard.html">Andre House</Link></h4>
+                    <h4><Link to="/teachers">Mohammed Hossain</Link></h4>
                     <h5>director</h5>
                     <p>Project-Based Learning is a flexible tool for framing.</p>
                   </div>
@@ -90,10 +90,10 @@ export default function About() {
               <div className="col-lg-3 col-md-4 col-sm-6 col-12">
                 <div className="ed_team_member">
                   <div className="ed_team_member_img">
-                    <img src="https://dummyimage.com/263x263/000/fff" alt="item1" className="img-responsive" />
+                    <img src="assets/images/myIT3.jpg" alt="item1" className="img-responsive" />
                   </div>
                   <div className="ed_team_member_description">
-                    <h4><Link to="instructor_dashboard.html">Frank Pascole</Link></h4>
+                    <h4><Link to="/teachers">Shirin Akter</Link></h4>
                     <h5>principle</h5>
                     <p>The European languages are members of the same fam.</p>
                   </div>
@@ -102,10 +102,10 @@ export default function About() {
               <div className="col-lg-3 col-md-4 col-sm-6 col-12">
                 <div className="ed_team_member">
                   <div className="ed_team_member_img">
-                    <img src="https://dummyimage.com/263x263/000/fff" alt="item1" className="img-responsive" />
+                    <img src="assets/images/myIT2.jpg" alt="item1" className="img-responsive" />
                   </div>
                   <div className="ed_team_member_description">
-                    <h4><Link to="instructor_dashboard.html">Tina Bonucci</Link></h4>
+                    <h4><Link to="/teachers">Syed Ziaul Habib</Link></h4>
                     <h5>t.p.o.</h5>
                     <p> The languages only differ in grammar, common words.</p>
                   </div>
@@ -114,10 +114,10 @@ export default function About() {
               <div className="col-lg-3 col-md-4 col-sm-6 col-12">
                 <div className="ed_team_member">
                   <div className="ed_team_member_img">
-                    <img src="https://dummyimage.com/263x263/000/fff" alt="item1" className="img-responsive" />
+                    <img src="assets/images/myIT1.jpg" alt="item1" className="img-responsive" />
                   </div>
                   <div className="ed_team_member_description">
-                    <h4><Link to="instructor_dashboard.html">Shy Tommus</Link></h4>
+                    <h4><Link to="/teachers">Md. Moshaidul Islam</Link></h4>
                     <h5>h.o.d.</h5>
                     <p>If several languages coalesce, the grammar of the resulting language.</p>
                   </div>

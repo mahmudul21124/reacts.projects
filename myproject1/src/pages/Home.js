@@ -181,7 +181,7 @@ export default function Home() {
               <div className="col-lg-4 col-md-6 col-sm-12 col-12">
                 <div className="ed_mostrecomeded_course">
                   <div className="ed_item_img">
-                    <img src="https://dummyimage.com/360x360/000/fff" alt="item1" className="img-responsive" />
+                    <img src="assets/images/myPc1.jpg" alt="item1" className="img-responsive" />
                   </div>
                   <div className="ed_item_description ed_most_recomended_data">
                     <h4><a href="course_single.html">Project Learning </a><span>£25</span></h4>
@@ -211,7 +211,7 @@ export default function Home() {
                     </div>
                     <div className="course_detail">
                       <div className="course_faculty">
-                        <img src="https://dummyimage.com/263x263/000/fff" alt="" /> <a href="instructor_dashboard.html">Joanna Simpson</a>
+                        <img src="assets/images/myMess1.jpg" alt="" /> <a href="instructor_dashboard.html">Abdullah Al Noman</a>
                       </div>
                     </div>
                     <p>Project-Based Learning is a flexible tool for framing given academic standards into curriculum flexible tool for framing.</p>
@@ -222,7 +222,7 @@ export default function Home() {
               <div className="col-lg-4 col-md-6 col-sm-12 col-12">
                 <div className="ed_mostrecomeded_course">
                   <div className="ed_item_img">
-                    <img src="https://dummyimage.com/360x360/000/fff" alt="item1" className="img-responsive" />
+                    <img src="assets/images/myPc2.jpg" alt="item1" className="img-responsive" />
                   </div>
                   <div className="ed_item_description ed_most_recomended_data">
                     <h4><a href="course_single.html">Billing Seminar</a><span>free</span></h4>
@@ -252,7 +252,7 @@ export default function Home() {
                     </div>
                     <div className="course_detail">
                       <div className="course_faculty">
-                        <img src="https://dummyimage.com/263x263/000/fff" alt="" /> <a href="instructor_dashboard.html">DESPERATE SCOTT</a>
+                        <img src="assets/images/myMess3.jpg" alt="" /> <a href="instructor_dashboard.html">Saif Jahan</a>
                       </div>
                     </div>
                     <p>Project-Based Learning is a flexible tool for framing given academic standards into curriculum flexible tool for framing.</p>
@@ -263,7 +263,7 @@ export default function Home() {
               <div className="col-lg-4 col-md-6 col-sm-12 col-12">
                 <div className="ed_mostrecomeded_course">
                   <div className="ed_item_img">
-                    <img src="https://dummyimage.com/360x360/000/fff" alt="item1" className="img-responsive" />
+                    <img src="assets/images/myPc5.jpg" alt="item1" className="img-responsive" />
                   </div>
                   <div className="ed_item_description ed_most_recomended_data">
                     <h4><a href="course_single.html">Javascript Camp</a><span>£60</span></h4>
@@ -293,7 +293,7 @@ export default function Home() {
                     </div>
                     <div className="course_detail">
                       <div className="course_faculty">
-                        <img src="https://dummyimage.com/263x263/000/fff" alt="" /> <a href="instructor_dashboard.html"> FRANK PASCAL</a>
+                        <img src="assets/images/myMess4.jpg" alt="" /> <a href="instructor_dashboard.html">A.S.M Abdullah</a>
                       </div>
                     </div>
                     <p>Project-Based Learning is a flexible tool for framing given academic standards into curriculum flexible tool for framing.</p>
@@ -354,7 +354,7 @@ export default function Home() {
               <div className="ed_video_section">
                 <div className="embed-responsive embed-responsive-16by9">
                   <div className="ed_video">
-                    <img src="https://dummyimage.com/545x330/000/fff" style={{ cursor: "pointer" }} alt="1" />
+                    <img src="assets/images/mockup.png" style={{ cursor: "pointer" }} alt="1" />
                     <div className="ed_img_overlay">
                       <a href="javascript:void(0);"><i className="fa fa-chevron-right"></i></a>
                     </div>
@@ -375,86 +375,7 @@ export default function Home() {
         </div>
       </div>
       {/*<!--video_section Section three end -->*/}
-      {/*<!--Our expertise section one start -->*/}
-      <div className="ed_graysection ed_toppadder80">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-12 col-md-12 col-sm-12 col-12">
-              <div className="ed_heading_top">
-                <h3>Popular areas of our expertise</h3>
-              </div>
-            </div>
-            <div className="col-lg-12 col-md-12 col-sm-12 col-12">
-              <div className="ed_populer_areas_slider">
-                <div className="owl-carousel owl-theme">
-                  <div className="item">
-                    <div className="ed_item_img">
-                      <img src="https://dummyimage.com/263x263/000/fff" alt="item1" className="img-responsive" />
-                    </div>
-                    <div className="ed_item_description">
-                      <h4>Vocational Counselling</h4>
-                      <p>Vocational counselling is a career on people who need to find a job. Pretty obvious, obvious right?</p>
-                      <a href="javascript:void(0);" className="ed_getinvolved">get involved <i className="fa fa-long-arrow-right"></i></a>
-                    </div>
-                  </div>
-                  <div className="item">
-                    <div className="ed_item_img">
-                      <img src="https://dummyimage.com/263x263/000/fff" alt="item2" className="img-responsive" />
-                    </div>
-                    <div className="ed_item_description">
-                      <h4>Elementary School</h4>
-                      <p>Vocational counselling is a career on people who need to find a job. Pretty obvious, obvious right?</p>
-                      <a href="javascript:void(0);" className="ed_getinvolved">get involved <i className="fa fa-long-arrow-right"></i></a>
-                    </div>
-                  </div>
-                  <div className="item">
-                    <div className="ed_item_img">
-                      <img src="https://dummyimage.com/263x263/000/fff" alt="item3" className="img-responsive" />
-                    </div>
-                    <div className="ed_item_description">
-                      <h4>Student Guidance</h4>
-                      <p>Vocational counselling is a career on people who need to find a job. Pretty obvious, obvious right?</p>
-                      <a href="javascript:void(0);" className="ed_getinvolved">get involved <i className="fa fa-long-arrow-right"></i></a>
-                    </div>
-                  </div>
-                  <div className="item">
-                    <div className="ed_item_img">
-                      <img src="https://dummyimage.com/263x263/000/fff" alt="item4" className="img-responsive" />
-                    </div>
-                    <div className="ed_item_description">
-                      <h4>Psychology Tests</h4>
-                      <p>Vocational counselling is a career on people who need to find a job. Pretty obvious, obvious right?</p>
-                      <a href="javascript:void(0);" className="ed_getinvolved">get involved <i className="fa fa-long-arrow-right"></i></a>
-                    </div>
-                  </div>
-                  <div className="item">
-                    <div className="ed_item_img">
-                      <img src="https://dummyimage.com/263x263/000/fff" alt="item1" className="img-responsive" />
-                    </div>
-                    <div className="ed_item_description">
-                      <h4>individual attention</h4>
-                      <p>Vocational counselling is a career on people who need to find a job. Pretty obvious, obvious right?</p>
-                      <a href="javascript:void(0);" className="ed_getinvolved">get involved <i className="fa fa-long-arrow-right"></i></a>
-                    </div>
-                  </div>
-                  <div className="item">
-                    <div className="ed_item_img">
-                      <img src="https://dummyimage.com/263x263/000/fff" alt="item2" className="img-responsive" />
-                    </div>
-                    <div className="ed_item_description">
-                      <h4>Peer Recognition</h4>
-                      <p>Vocational counselling is a career on people who need to find a job. Pretty obvious, obvious right?</p>
-                      <a href="javascript:void(0);" className="ed_getinvolved">get involved <i className="fa fa-long-arrow-right"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        {/*<!-- /.container -->*/}
-      </div>
-      {/*<!--Our expertise section one end -->*/}
+      
       {/*<!--Latest news Section start -->*/}
       <div className="ed_transprentbg ed_toppadder80 ed_bottompadder80">
         <div className="container">
@@ -508,37 +429,37 @@ export default function Home() {
                 <div id="owl-demo5" className="owl-carousel owl-theme">
                   <div className="item">
                     <a href="javascript:void(0);">
-                      <img src="https://dummyimage.com/110x110/000/fff" alt="Partner Img" />
+                      <img src="assets/images/my2.jpg" alt="Partner Img" />
                     </a>
                   </div>
                   <div className="item">
                     <a href="javascript:void(0);">
-                      <img src="https://dummyimage.com/110x110/000/fff" alt="Partner Img" />
+                      <img src="assets/images/my3.jpg" alt="Partner Img" />
                     </a>
                   </div>
                   <div className="item">
                     <a href="javascript:void(0);">
-                      <img src="https://dummyimage.com/110x110/000/fff" alt="Partner Img" />
+                      <img src="assets/images/my4.jpg" alt="Partner Img" />
                     </a>
                   </div>
                   <div className="item">
                     <a href="javascript:void(0);">
-                      <img src="https://dummyimage.com/110x110/000/fff" alt="Partner Img" />
+                      <img src="assets/images/my5.jpg" alt="Partner Img" />
                     </a>
                   </div>
                   <div className="item">
                     <a href="javascript:void(0);">
-                      <img src="https://dummyimage.com/110x110/000/fff" alt="Partner Img" />
+                      <img src="assets/images/my6.jpg" alt="Partner Img" />
                     </a>
                   </div>
                   <div className="item">
                     <a href="javascript:void(0);">
-                      <img src="https://dummyimage.com/110x110/000/fff" alt="Partner Img" />
+                      <img src="assets/images/my7.jpg" alt="Partner Img" />
                     </a>
                   </div>
                   <div className="item">
                     <a href="javascript:void(0);">
-                      <img src="https://dummyimage.com/110x110/000/fff" alt="Partner Img" />
+                      <img src="assets/images/my8.jpg" alt="Partner Img" />
                     </a>
                   </div>
                 </div>

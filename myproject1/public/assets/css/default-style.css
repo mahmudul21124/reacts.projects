@@ -1224,7 +1224,7 @@ a.ed_getinvolved:hover i {
     background-size: cover;
     background-attachment: fixed;
     position: relative;
-    background-image: url(https://dummyimage.com/1920x1080/000/fff);
+    background-image: url(assets/images/myCounto.jpg);
     background-position: 100% 100%;
     background-repeat: no-repeat;
 }
@@ -1674,7 +1674,7 @@ a.ed_getinvolved:hover i {
     background-size: cover;
     background-attachment: fixed;
     position: relative;
-    background-image: url(https://dummyimage.com/1920x1080/000/fff);
+    background-image: url(assets/images/myCounto.jpg);
     background-repeat: no-repeat;
     background-position: 100% 100%;
 }
@@ -1967,7 +1967,7 @@ a.ed_getinvolved:hover i {
     background-size: cover;
     color: #fff;
     padding: 100px 0px;
-    background-image: url(https://dummyimage.com/1920x1080/000/fff);
+    background-image: url(assets/images/myCounto.jpg);
     background-position: 100% 100%;
     background-repeat: no-repeat;
 }
@@ -4346,7 +4346,7 @@ a.ed_getinvolved:hover i {
     width: 100%;
     background-size: cover;
     min-height: 600px;
-    background-image: url(https://dummyimage.com/1920x1080/000/fff);
+    background-image: url(assets/images/myCounto.jpg);
     position: relative;
     z-index: 1;
     background-position: 100% 100%;
