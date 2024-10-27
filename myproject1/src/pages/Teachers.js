@@ -1,6 +1,20 @@
-import React from "react";
+import axios from "axios";
+import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Teachers() {
+  const [users, setUsers] = useState([]);
+
+  useEffect(() => {
+    getUsers();
+  }, []);
+
+  function getUsers() {
+    axios.get("http://localhost/wdpf60_php/myproject/Admin/teacherList.php/").then(function (response) {
+      console.log(response.data);
+      setUsers(response.data);
+    });
+  }
   return (
     <>
       {/*<!--Page main section start-->*/}
@@ -42,7 +56,8 @@ export default function Teachers() {
                 </div>
               </div>
               <div className="ed_team_wrapper row">
-                <div className="col-lg-3 col-md-4 col-sm-6 col-12">
+              {users.map((user, key) =>
+                <div className="col-lg-3 col-md-4 col-sm-6 col-12" key={key}>
                   <div className="ed_team_member">
                     <div className="ed_team_member_img">
                       <img
@@ -53,243 +68,16 @@ export default function Teachers() {
                     </div>
                     <div className="ed_team_member_description">
                       <h4>
-                        <a href="instructor_dashboard.html">Joanna Simpson</a>
+                        <a href="instructor_dashboard.html">{user.name}</a>
                       </h4>
-                      <h5>Ass. Professor</h5>
+                      <h5>{user.department}</h5>
                       <p>
-                        Bisque ornate send dictum portal, mi torpor Sagittarius.
+                        {user.address}
                       </p>
                     </div>
                   </div>
                 </div>
-                <div className="col-lg-3 col-md-4 col-sm-6 col-12">
-                  <div className="ed_team_member">
-                    <div className="ed_team_member_img">
-                      <img
-                        src="https://dummyimage.com/263x263/000/fff"
-                        alt="item1"
-                        className="img-responsive"
-                      />
-                    </div>
-                    <div className="ed_team_member_description">
-                      <h4>
-                        <a href="instructor_dashboard.html">Desperate Scott</a>
-                      </h4>
-                      <h5>Ass. Professor</h5>
-                      <p>
-                        Project-Based Learning is a flexible tool for framing.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-lg-3 col-md-4 col-sm-6 col-12">
-                  <div className="ed_team_member">
-                    <div className="ed_team_member_img">
-                      <img
-                        src="https://dummyimage.com/263x263/000/fff"
-                        alt="item1"
-                        className="img-responsive"
-                      />
-                    </div>
-                    <div className="ed_team_member_description">
-                      <h4>
-                        <a href="instructor_dashboard.html">Mike Tussle</a>
-                      </h4>
-                      <h5>Maths Teacher</h5>
-                      <p>
-                        {" "}
-                        I throw myself down among the tall grass by the stream.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-lg-3 col-md-4 col-sm-6 col-12">
-                  <div className="ed_team_member">
-                    <div className="ed_team_member_img">
-                      <img
-                        src="https://dummyimage.com/263x263/000/fff"
-                        alt="item1"
-                        className="img-responsive"
-                      />
-                    </div>
-                    <div className="ed_team_member_description">
-                      <h4>
-                        <a href="instructor_dashboard.html">James Marco</a>
-                      </h4>
-                      <h5>Maths Teacher</h5>
-                      <p>
-                        I lie close to the a thousand unknown plants noticed.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-lg-3 col-md-4 col-sm-6 col-12">
-                  <div className="ed_team_member">
-                    <div className="ed_team_member_img">
-                      <img
-                        src="https://dummyimage.com/263x263/000/fff"
-                        alt="item1"
-                        className="img-responsive"
-                      />
-                    </div>
-                    <div className="ed_team_member_description">
-                      <h4>
-                        <a href="instructor_dashboard.html">Andre House</a>
-                      </h4>
-                      <h5>director</h5>
-                      <p>
-                        Project-Based Learning is a flexible tool for framing.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-lg-3 col-md-4 col-sm-6 col-12">
-                  <div className="ed_team_member">
-                    <div className="ed_team_member_img">
-                      <img
-                        src="https://dummyimage.com/263x263/000/fff"
-                        alt="item1"
-                        className="img-responsive"
-                      />
-                    </div>
-                    <div className="ed_team_member_description">
-                      <h4>
-                        <a href="instructor_dashboard.html">Frank Pascole</a>
-                      </h4>
-                      <h5>principle</h5>
-                      <p>
-                        The European languages are members of the same family.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-lg-3 col-md-4 col-sm-6 col-12">
-                  <div className="ed_team_member">
-                    <div className="ed_team_member_img">
-                      <img
-                        src="https://dummyimage.com/263x263/000/fff"
-                        alt="item1"
-                        className="img-responsive"
-                      />
-                    </div>
-                    <div className="ed_team_member_description">
-                      <h4>
-                        <a href="instructor_dashboard.html">Tina Bonucci</a>
-                      </h4>
-                      <h5>t.p.o.</h5>
-                      <p>
-                        {" "}
-                        The languages only differ in grammar, most common words.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-lg-3 col-md-4 col-sm-6 col-12">
-                  <div className="ed_team_member">
-                    <div className="ed_team_member_img">
-                      <img
-                        src="https://dummyimage.com/263x263/000/fff"
-                        alt="item1"
-                        className="img-responsive"
-                      />
-                    </div>
-                    <div className="ed_team_member_description">
-                      <h4>
-                        <a href="instructor_dashboard.html">Shy Tommus</a>
-                      </h4>
-                      <h5>h.o.d.</h5>
-                      <p>
-                        If several languages coalesce, the grammar of the
-                        resulting language.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-lg-3 col-md-4 col-sm-6 col-12">
-                  <div className="ed_team_member">
-                    <div className="ed_team_member_img">
-                      <img
-                        src="https://dummyimage.com/263x263/000/fff"
-                        alt="item1"
-                        className="img-responsive"
-                      />
-                    </div>
-                    <div className="ed_team_member_description">
-                      <h4>
-                        <a href="instructor_dashboard.html">Scott Again</a>
-                      </h4>
-                      <h5>Bio Teacher</h5>
-                      <p>
-                        I must explain to you how all this idea of denouncing
-                        pleasure.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-lg-3 col-md-4 col-sm-6 col-12">
-                  <div className="ed_team_member">
-                    <div className="ed_team_member_img">
-                      <img
-                        src="https://dummyimage.com/263x263/000/fff"
-                        alt="item1"
-                        className="img-responsive"
-                      />
-                    </div>
-                    <div className="ed_team_member_description">
-                      <h4>
-                        <a href="instructor_dashboard.html">Sarah Silvester</a>
-                      </h4>
-                      <h5>Dance Teacher</h5>
-                      <p>
-                        The actual teachings of the great explorer of the
-                        master-builder.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-lg-3 col-md-4 col-sm-6 col-12">
-                  <div className="ed_team_member">
-                    <div className="ed_team_member_img">
-                      <img
-                        src="https://dummyimage.com/263x263/000/fff"
-                        alt="item1"
-                        className="img-responsive"
-                      />
-                    </div>
-                    <div className="ed_team_member_description">
-                      <h4>
-                        <a href="instructor_dashboard.html">Front Profile</a>
-                      </h4>
-                      <h5>Sports Teacher</h5>
-                      <p>
-                        {" "}
-                        To take a teachings, which of us ever undertakes
-                        physical exercise.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-lg-3 col-md-4 col-sm-6 col-12">
-                  <div className="ed_team_member">
-                    <div className="ed_team_member_img">
-                      <img
-                        src="https://dummyimage.com/263x263/000/fff"
-                        alt="item1"
-                        className="img-responsive"
-                      />
-                    </div>
-                    <div className="ed_team_member_description">
-                      <h4>
-                        <a href="instructor_dashboard.html">Anna Blown</a>
-                      </h4>
-                      <h5>Ass. Professor</h5>
-                      <p>
-                        She charms of pleasure of the moment, so blinded by
-                        desire foresee.
-                      </p>
-                    </div>
-                  </div>
-                </div>
+                )}
               </div>
             </div>
           </div>

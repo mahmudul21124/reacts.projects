@@ -68,6 +68,9 @@ export default function Header() {
                                             <Link to="teachers">Teachers</Link>
                                         </li>
                                         <li>
+                                            <Link to="notice">Notice Board</Link>
+                                        </li>
+                                        <li>
                                             <Link to="contact">Contact</Link>
                                         </li>
                                     </ul>
