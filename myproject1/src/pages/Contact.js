@@ -1,7 +1,23 @@
-import React from 'react'
+import { useState } from "react";
+import axios from "axios";
 import { Link } from 'react-router-dom'
 
 export default function Contact() {
+    const [inputs, setInputs] = useState([]);
+
+    const handleChange = (event) => {
+      const name = event.target.name;
+      const value = event.target.value;
+      setInputs((values) => ({ ...values, [name]: value }));
+    };
+  
+    const handleSubmit = (event) => {
+      event.preventDefault();
+      axios.post('http://localhost/wdpf60_php/myproject/Admin/contactList.php', inputs).then(function(response){
+      console.log(response.data);
+      //console.log(inputs);
+      })
+  };
   return (
     <>
       {/*<!--Breadcrumb start-->*/}
@@ -35,24 +51,28 @@ export default function Contact() {
                         </div>
                     </div>
                     <div className="ed_contact_form ed_toppadder60 row m-0">
+                    <form onSubmit={handleSubmit}>
                         <div className="col-lg-6 col-md-6 col-sm-12">
+                            
                             <div className="form-group">
-                                <input type="text" id="uname" className="form-control" placeholder="Your Name"/>
+                                <input type="text" id="name" name="name" className="form-control" placeholder="Your Name" onChange={handleChange}/>
                             </div>
                             <div className="form-group">
-                                <input type="email" id="umail" className="form-control" placeholder="Your Email"/>
+                                <input type="email" id="email" name="email"  className="form-control" placeholder="Your Email" onChange={handleChange}/>
                             </div>
                             <div className="form-group">
-                                <input type="text" id="sub" className="form-control" placeholder="Subject"/>
+                                <input type="text" id="subject" name="subject"className="form-control" placeholder="Subject" onChange={handleChange}/>
                             </div>
+                            
                         </div>
                         <div className="col-lg-6 col-md-6 col-sm-12">
                             <div className="form-group">
-                                <textarea id="msg" className="form-control" rows="6" placeholder="Message"></textarea>
+                                <textarea id="massage" className="form-control" name="massage" rows="6" placeholder="Message" onChange={handleChange}></textarea>
                             </div>
-                            <button id="ed_submit" className="btn ed_btn ed_orange pull-right">send</button>
+                            <button type="submit" id="ed_submit" className="btn ed_btn ed_orange pull-right">send</button>
                             <p id="err"></p>
                         </div>
+                        </form>
                     </div>
                 </div>
             </div>

@@ -61,7 +61,7 @@ export default function Teachers() {
                   <div className="ed_team_member">
                     <div className="ed_team_member_img">
                       <img
-                        src="https://dummyimage.com/263x263/000/fff"
+                        src={`http://localhost/wdpf60_php/myproject/Admin/image/teacher/${user.photo}`}
                         alt="item1"
                         className="img-responsive"
                       />
